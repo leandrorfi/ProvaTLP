@@ -24,12 +24,54 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Wellington RA:101114 Unifev-Votuporanga</p>
+            <div class="footer-first-father-div">
+                <div class="footer-left-div">
+                    <div class="footer-left-label">
+                        Wellington 2022 - Todos os direitos reservados
+                    </div>
+
+                    <div class="footer-left-label">
+                        Beba com moderação. Não compartilhe este conteúdo com menores de idade.
+                    </div>
+                </div>
+
+                <div class="footer-right-div">
+                    <div class="footer-right-div-label">
+                        SAC
+                    </div>
+
+                    <div class="footer-right-div-label">
+                        TERMOS DE USO
+                    </div>
+
+                    <div class="footer-right-div-label">
+                        POLÍTICA DE PRIVACIDADE
+                    </div>
+
+                    <div class="footer-right-div-label">
+                        CONSUMO RESPONSÁVEL
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social-media-div">
+                <p>
+                    Nos siga nas redes sociais.
+                </p>
+
+                <div class="footer-div-icons">
+                    <a href="#" class="fa fa-instagram" id="socialmedia-icons"></a>
+                    <a href="#" class="fa fa-facebook" id="socialmedia-icons"></a>
+                    <a href="#" class="fa fa-twitter" id="socialmedia-icons"></a>
+                    <a href="#" class="fa fa-youtube" id="socialmedia-icons"></a>
+                </div>
+            </div>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>

@@ -81,3 +81,65 @@ footer {
     padding: 6rem 0;
     background-image: linear-gradient(#FFA833, #FFD723);
 }
+
+.footer-first-father-div {
+    display: flex;
+}
+
+.footer-left-div {
+    margin: 0 0 0 8rem;
+    max-width: 40%;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-left-label {
+    color: #2B1C11;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin: 0 2rem 2rem 2rem
+}
+
+
+.footer-right-div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-right-div-label {
+    margin: 0 2rem;
+    color: #2B1C11;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.footer-right-div-label:hover {
+    transition: 500ms;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.footer-social-media-div {
+    margin: 4rem 0 0 0;
+    text-align: center;
+    align-items: center;
+}
+
+    .footer-social-media-div p {
+        color: #2B1C11;
+        margin: 3rem 0;
+        font-weight: bold;
+        font-size: 2.8rem;
+    }
+
+.footer-div-icons a {
+    font-size: 4rem;
+    color: white;
+    margin: 10px 0 0 20px;
+}
+
+.footer-div-icons a:hover {
+    text-decoration: none;
+}
