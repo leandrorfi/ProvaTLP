@@ -1,25 +1,83 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    text-align:center ;
+    margin: 0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/* Navbar */
+
+.navbar {
+    display: flex;
+    background-image: linear-gradient(#FFA833, #FFD723);
+    padding: 1rem;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.logo {
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 1rem;
+    text-decoration: none;
+    margin-left: 5%;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    /* max-width: 280px; */
+.logo a {
+    color: #2B1C11;
+}
+
+.logo a:hover {
+    transition: 500ms;
+    color: #FF321E;
+    text-decoration: none;
+}
+
+.navbar-links {
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    margin-left: 60%;
+}
+
+.navbar-links ul {
+    padding-top: 1.4rem;
+    display: flex;
+}
+
+.navbar-links ul li {
+    list-style: none;
+    margin: 0 0 0 3rem;
+}
+
+.navbar-links ul li a {
+    color: #2B1C11;
+}
+
+.navbar-links ul li a:hover {
+    transition: 500ms;
+    color: #FF321E;
+    text-decoration: none;
+}
+
+/* Index */
+
+.first-banner-div{
+    text-align: center;
+}
+
+.first-banner-div:hover{
+    cursor: pointer;
+}
+
+.second-banner-div {
+    text-align: center;
+    margin: 8rem 0 0 0;
+}
+
+.index-paragraph {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Footer */
+footer {
+    padding: 6rem 0;
+    background-image: linear-gradient(#FFA833, #FFD723);
 }
