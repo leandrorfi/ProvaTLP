@@ -1,0 +1,36 @@
+USE [Cervejaria]
+GO
+/****** Object:  Table [dbo].[Cerveja]    Script Date: 28/09/2022 19:23:01 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Cerveja]') AND type in (N'U'))
+DROP TABLE [dbo].[Cerveja]
+GO
+/****** Object:  Table [dbo].[Cerveja]    Script Date: 28/09/2022 19:23:01 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Cerveja](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](100) NOT NULL,
+	[Tipo] [varchar](100) NOT NULL,
+	[Ano] [smallint] NOT NULL,
+	[Fabricacao] [smallint] NOT NULL,
+	[Cor] [varchar](50) NOT NULL,
+	[Embalagem] [tinyint] NOT NULL,
+	[Alcoolica] [bit] NOT NULL,
+	[Valor] [decimal](18, 2) NOT NULL,
+	[Ativo] [bit] NULL,
+ CONSTRAINT [PK_Cerveja] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Cerveja] ON 
+GO
+INSERT [dbo].[Cerveja] ([Id], [Nome], [Tipo], [Ano], [Fabricacao], [Cor], [Embalagem], [Alcoolica], [Valor], [Ativo]) VALUES (1, N'BandenBaden', N'IPA', 1978, 2022, N'escura', 1, 1, CAST(12.99 AS Decimal(18, 2)), 1)
+GO
+INSERT [dbo].[Cerveja] ([Id], [Nome], [Tipo], [Ano], [Fabricacao], [Cor], [Embalagem], [Alcoolica], [Valor], [Ativo]) VALUES (2, N'BlackPrincess', N'Light', 1970, 2022, N'media', 1, 1, CAST(9.99 AS Decimal(18, 2)), 1)
+GO
+SET IDENTITY_INSERT [dbo].[Cerveja] OFF
+GO
