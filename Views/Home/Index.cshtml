@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="first-banner-div">
+<div class="banner-div">
     <img src="~/Content/Imagens/Banner1.png" />
 </div>
 
@@ -14,6 +14,102 @@
     <div class="footer-div-icons">
         <img src="~/Content/cerveja3.png" width="1000" height="500" />
     </div>
+</div>
+
+
+<div class="cliente-avaliacao-div-pai">
+
+    <p class="recomendacao-paragraph"> 
+        Avaliação de nossos clientes 
+    </p>
+
+    <div class="cliente-avaliacao-div">
+
+        @*Primeiro cliente*@
+        <div class="cliente-avaliacao-caixa">
+            <div class="cliente-nome-foto-caixa">
+                <div class="cliente-nome">
+                    João
+                </div>
+
+                <div class="cliente-imagem-div">
+                    <img src="~/Content/Imagens/Cliente1.jpg" />
+                </div>
+            </div>
+
+            <div class="cliente-frase-div">
+                <div class="cliente-frase">
+                    "Com certeza uma das melhores cervejarias que ja fui."
+                </div>
+
+                <div>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                </div>
+            </div>
+        </div>
+
+        @* Segundo cliente *@
+        <div class="cliente-avaliacao-caixa">
+            <div class="cliente-nome-foto-caixa">
+                <div class="cliente-nome">
+                    Ana
+                </div>
+
+                <div class="cliente-imagem-div">
+                    <img src="~/Content/Imagens/Cliente2.jpg" />
+                </div>
+            </div>
+
+            <div class="cliente-frase-div">
+                <div class="cliente-frase">
+                    "Atendimento espetacular, amoooo sz"
+                </div>
+
+                <div>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                </div>
+            </div>
+        </div>
+
+        @* Terceiro cliente *@
+        <div class="cliente-avaliacao-caixa">
+            <div class="cliente-nome-foto-caixa">
+                <div class="cliente-nome">
+                    Roberto
+                </div>
+
+                <div class="cliente-imagem-div">
+                    <img src="~/Content/Imagens/Cliente3.png" />
+                </div>
+            </div>
+
+            <div class="cliente-frase-div">
+                <div class="cliente-frase">
+                    "Muito bom, porem esta sempre lotado nos finais de semana."
+                </div>
+
+                <div>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star checked" id="star-rating"></span>
+                    <span class="fa fa-star" id="star-rating"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="banner-div" id="second-banner">
+    <img src="~/Content/Imagens/Banner2.png" />
 </div>
 
 

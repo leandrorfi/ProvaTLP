@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+.checked {
+    color: orange;
+}
+
 /* Navbar */
 
 .navbar {
@@ -58,11 +62,11 @@
 
 /* Index */
 
-.first-banner-div{
+.banner-div{
     text-align: center;
 }
 
-.first-banner-div:hover{
+.banner-div:hover{
     cursor: pointer;
 }
 
@@ -74,6 +78,66 @@
 .index-paragraph {
     font-weight: bold;
     font-size: 3rem;
+}
+
+.cliente-avaliacao-div-pai {
+    background-image: linear-gradient(#FBBB33, #FFE2A4);
+}
+
+.cliente-avaliacao-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0 8rem 0;
+}
+
+.recomendacao-paragraph {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding: 6rem 0 2rem 0;
+}
+
+.cliente-nome {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.cliente-avaliacao-caixa {
+    border-style: groove;
+    border-color: #000;
+    border-radius: 4rem;
+}
+
+.cliente-nome-foto-caixa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0 0 0;
+}
+
+.cliente-frase-div {
+    padding: 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+.cliente-frase {
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.cliente-imagem-div img{
+    height: 170px;
+    width: 200px;
+}
+
+#star-rating {
+    font-size: 2rem;
+}
+
+#second-banner {
+    padding: 3rem 0;
 }
 
 /* Footer */
