@@ -1,0 +1,41 @@
+﻿@model ProvaLibrary.Modelos.CervejaModelo
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <dl class="details-dl">
+        <dt class="details-label">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd class="details-value" id="marca-value-label">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt class="details-label">
+            @Html.DisplayNameFor(model => model.Mililitros)
+        </dt>
+
+        <dd class="details-value">
+            @Html.DisplayFor(model => model.Mililitros)
+        </dd>
+
+        <dt class="details-label">
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+
+        <dd class="details-value" id="details-value-id">
+            R$@Html.DisplayFor(model => model.Valor)
+        </dd>
+
+    </dl>
+</div>
+
+<div class="voltar-button">
+    <a href="~/Home/Index">
+        Voltar
+    </a>
+</div>

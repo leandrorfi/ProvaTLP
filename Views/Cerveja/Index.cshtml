@@ -2,7 +2,31 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var cervejas = ViewBag.Cervejas;
 }
 
-<h2>Index</h2>
+@{
+    <div class="row">
+        @foreach (var cerveja in cervejas)
+        {
+            <a class="col-md-12" id="cerveja-display" href="~/Cerveja/Detalhes/@cerveja.Id">
+                <div>
+                    <div class="cerveja-marca">
+                        @cerveja.Marca
+                    </div>
+
+                    <div class="cerveja-mililitros">
+                        @cerveja.Mililitros (ML)
+                    </div>
+                </div>
+
+                <div class="cerveja-preco">
+                    R$@cerveja.Valor
+                </div>
+            </a>
+        }
+    </div>
+
+}
 

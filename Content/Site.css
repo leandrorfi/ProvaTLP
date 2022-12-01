@@ -140,7 +140,98 @@
     padding: 3rem 0;
 }
 
+/* Cervejas */
+
+#cerveja-display {
+    padding: 20px 0 0 0;
+    text-align: center;
+    border-bottom-style: groove;
+    border-color: #FCC666;
+    color: black;
+    margin: 0 0 2rem 0;
+}
+
+    #cerveja-display:hover {
+        transition: 400ms;
+        text-decoration: none;
+        background: #E9E9E9;
+    }
+
+.cerveja-marca {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.cerveja-mililitros {
+    font-size: 2rem;
+    margin: 15px 0 15px 0;
+}
+
+.cerveja-preco {
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFA200;
+    margin: 15px 0 15px 0;
+}
+
+    .cerveja-preco:hover {
+        transition: 400ms;
+        color: #FFA200;
+    }
+
+/* Detalhes */
+
+.details-label {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.details-value {
+    font-size: 20px;
+    margin: 0 0 2rem 0;
+}
+
+#details-value-id {
+    border-bottom-style: groove;
+    border-color: #FFBB42;
+    padding: 0 0 3rem 0;
+    color: orange;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#marca-value-label {
+    font-size: 3rem;
+}
+
+.details-dl {
+    text-align: center;
+}
+
+.voltar-button {
+    text-align: center;
+    margin: 5rem 0 0 0;
+}
+
+    .voltar-button a {
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 2rem;
+        border-radius: 15px;
+        color: white;
+        background-image: linear-gradient(#FFA200, #FFBB45);
+    }
+
+        .voltar-button a:hover {
+            transition: 200ms;
+            border-style: groove;
+            text-decoration: none;
+            color: #FFA200;
+            background: white;
+        }
+
 /* Footer */
+
 footer {
     padding: 6rem 0;
     background-image: linear-gradient(#FFA833, #FFD723);

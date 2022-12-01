@@ -171,11 +171,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Cervejas.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Sobre.cshtml" />
     <Content Include="Views\Cerveja\Index.cshtml" />
-    <Content Include="Views\Cerveja\View.cshtml" />
+    <Content Include="Views\Cerveja\Detalhes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
