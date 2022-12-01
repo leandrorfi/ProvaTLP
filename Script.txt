@@ -1,0 +1,112 @@
+USE [master]
+GO
+/****** Object:  Database [CervejariaDatabase]    Script Date: 30/11/2022 22:01:18 ******/
+CREATE DATABASE [CervejariaDatabase]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'CervejariaDatabase', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\CervejariaDatabase_Primary.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'CervejariaDatabase_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\CervejariaDatabase_Primary.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
+ALTER DATABASE [CervejariaDatabase] SET COMPATIBILITY_LEVEL = 150
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [CervejariaDatabase].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [CervejariaDatabase] SET ANSI_NULL_DEFAULT ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET ANSI_NULLS ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET ANSI_PADDING ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET ANSI_WARNINGS ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET ARITHABORT ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET CURSOR_DEFAULT  LOCAL 
+GO
+ALTER DATABASE [CervejariaDatabase] SET CONCAT_NULL_YIELDS_NULL ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET QUOTED_IDENTIFIER ON 
+GO
+ALTER DATABASE [CervejariaDatabase] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [CervejariaDatabase] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [CervejariaDatabase] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET RECOVERY FULL 
+GO
+ALTER DATABASE [CervejariaDatabase] SET  MULTI_USER 
+GO
+ALTER DATABASE [CervejariaDatabase] SET PAGE_VERIFY NONE  
+GO
+ALTER DATABASE [CervejariaDatabase] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [CervejariaDatabase] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [CervejariaDatabase] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+GO
+ALTER DATABASE [CervejariaDatabase] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [CervejariaDatabase] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+ALTER DATABASE [CervejariaDatabase] SET QUERY_STORE = OFF
+GO
+USE [CervejariaDatabase]
+GO
+/****** Object:  Table [dbo].[Cervejas]    Script Date: 30/11/2022 22:01:18 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Cervejas](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Marca] [nvarchar](255) NOT NULL,
+	[Mililitros] [int] NOT NULL,
+	[Valor] [decimal](18, 2) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Cervejas] ON 
+
+INSERT [dbo].[Cervejas] ([Id], [Marca], [Mililitros], [Valor]) VALUES (1, N'Skol', 2000, CAST(10.00 AS Decimal(18, 2)))
+INSERT [dbo].[Cervejas] ([Id], [Marca], [Mililitros], [Valor]) VALUES (2, N'Brahma', 1000, CAST(4.80 AS Decimal(18, 2)))
+INSERT [dbo].[Cervejas] ([Id], [Marca], [Mililitros], [Valor]) VALUES (4, N'Reineken', 600, CAST(5.20 AS Decimal(18, 2)))
+INSERT [dbo].[Cervejas] ([Id], [Marca], [Mililitros], [Valor]) VALUES (5, N'Esisenbahn', 350, CAST(3.50 AS Decimal(18, 2)))
+INSERT [dbo].[Cervejas] ([Id], [Marca], [Mililitros], [Valor]) VALUES (6, N'Budweiser', 350, CAST(3.23 AS Decimal(18, 2)))
+INSERT [dbo].[Cervejas] ([Id], [Marca], [Mililitros], [Valor]) VALUES (7, N'Spaten', 355, CAST(3.72 AS Decimal(18, 2)))
+SET IDENTITY_INSERT [dbo].[Cervejas] OFF
+GO
+USE [master]
+GO
+ALTER DATABASE [CervejariaDatabase] SET  READ_WRITE 
+GO
